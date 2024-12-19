@@ -1,0 +1,40 @@
+The bug can be resolved by adding a defined width to the parent container.  Alternatively, using flexbox or grid provides more robust and predictable layout control.
+
+**Solution 1 (Defining parent width):**
+
+```css
+.container {
+  width: 1000px; /* Or any specific width */
+}
+
+div {
+  width: 50%;
+  float: left;
+  box-sizing: border-box; /* optional for consistent results */
+}
+```
+
+**Solution 2 (Using Flexbox):**
+
+```css
+.container {
+  display: flex;
+}
+
+div {
+  width: 50%;
+}
+```
+
+**Solution 3 (Using Grid):**
+
+```css
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+div {
+  width: auto; /* or any suitable value */
+}
+```
