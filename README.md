@@ -1,0 +1,3 @@
+# CSS Float and Width Issue
+
+This repository demonstrates an uncommon CSS bug related to floating elements and percentage widths.  The issue arises when using `float: left;` and `width: 50%;` on elements without specifying a width for their parent container. This can lead to unexpected layout behavior, particularly in different browsers. The solution showcases how to fix this layout problem by providing a defined width to the parent container or using alternative layout methods like flexbox or grid.
