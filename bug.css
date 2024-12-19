@@ -1,0 +1,10 @@
+The following CSS code snippet causes unexpected behavior in certain browsers:
+
+```css
+div {
+  width: 50%;
+  float: left;
+}
+```
+
+This snippet attempts to make two divs occupy 50% of the available width each and float side by side. However, if the parent container does not have a defined width, the divs may not behave as expected, potentially collapsing or overlapping.
